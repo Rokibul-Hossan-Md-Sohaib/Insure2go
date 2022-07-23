@@ -1,0 +1,57 @@
+.bar{
+
+}
+.topbar{
+    height: 60px;
+    background-color: white;
+}
+.topbar-ul{
+    margin-right: auto;
+  
+   }
+.topbar-ul li{
+ margin-right: 50px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.topbar-ul li a{
+ 
+       text-decoration: none;
+   }
+.logo{
+    height: 80px;
+    width: 100px;
+}
+
+.properties{
+   color: black;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.properties:hover{
+    color: #d8810f;
+    cursor: pointer;
+ 
+}
+#home:hover{
+    color: blue;
+}
+#basic-nav-dropdown{
+    color: white;
+    
+   
+}
+#basic-nav-dropdown>li{
+   background-color:  blue;
+   font-weight: 500;
+}
+
+#basic-nav-dropdown:hover{
+  color: blue;
+    
+   
+}
+NavDropdown.item{
+color: blue;
+}

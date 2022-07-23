@@ -1,0 +1,36 @@
+.services{
+
+
+}
+
+.features-service {
+    margin-top: 100px;
+  
+
+   
+}
+.one{
+    background-color: #b45309 ;
+    height: 700px;
+    
+ 
+}
+.one h1{
+    margin-left: 20px;
+    margin-top: 60px;
+}
+.one p{
+    font-size: 20px;
+    margin-left: 20px;
+   
+}
+.two h1{
+    margin-top: 60px;
+}
+.two p{
+    font-size: 20px;
+}
+.two{
+    background-color: #2F4F4F;
+   
+}

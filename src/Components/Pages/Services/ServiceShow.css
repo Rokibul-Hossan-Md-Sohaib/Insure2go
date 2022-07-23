@@ -1,0 +1,27 @@
+
+
+.cor-primary{
+    background-color: RGB(83, 83, 83);
+}
+
+.cor-dark{
+    background-color:#3E4659;
+}
+.info-container {
+    height: 200px;
+    padding: 30px;
+    
+}
+
+.info-icon{
+    font-size: 5em;
+    color: RGB(83, 83, 83);
+   
+}
+.icon{
+    margin-right:  20px;
+}
+.info-icon:hover {
+cursor: pointer;
+color: blanchedalmond;
+}
