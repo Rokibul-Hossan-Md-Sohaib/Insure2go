@@ -21,6 +21,7 @@ const Navs = () => {
       className="bar"
       expand="lg"
       sticky="top"
+      mb-5
       style={{ backgroundColor: "#eef2ff" }}
     >
       <Container>

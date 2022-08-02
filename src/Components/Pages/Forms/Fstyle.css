@@ -1,0 +1,22 @@
+.insuTitle{
+text-align: center;
+    justify-content: center;
+    color: brown;
+    margin-top: 80px;
+}
+.wholeForm{
+    margin-top: 130px;
+}
+.row{
+    margin-top: 20px;
+}
+.d-flex{
+    color: brown;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btns{
+    background-color: red;
+    color: black;
+    border-radius: 2px solid;
+}

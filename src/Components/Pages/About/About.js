@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./About.css";
 
 const About = () => {
@@ -16,9 +17,11 @@ const About = () => {
            
             </p>
 
-            <a href="#" class="btn btn-white btn-animated">
-              Get Free Quotes
-            </a>
+            <Link to="/carFrom" class="btn btn-white btn-animated">
+
+            Get Free Quotes
+            </Link>
+       
           </div>
         </Carousel.Item>
         <Carousel.Item>
@@ -29,12 +32,11 @@ const About = () => {
             24/7 EMERGENCY SERVICE. LESS THAN 10 MINUTES TO ARRIVE .
             </p>
 
-            <a
-              href="https://www.thedailycompliance.com/mdr"
-              className="btn btn-white btn-animated text-dark"
-            >
-              Get Free Quotes
-            </a>
+            <Link to="/carFrom" class="btn btn-white btn-animated">
+            Get Free Quotes
+            </Link>
+           
+         
           </div>
         </Carousel.Item>
         <Carousel.Item>
@@ -45,15 +47,14 @@ const About = () => {
               WE JUST GO BEYOUND THE SCOPES OF YOUR EXPECTATIONS.
             </p>
 
-            <a
-              href="https://www.thedailycompliance.com/mdr"
-              className="btn btn-white btn-animated text-dark "
-            >
-              Get Free Quotes
-            </a>
+            <Link to="/carFrom" class="btn btn-white btn-animated">
+            Get Free Quotes
+            </Link>
           </div>
         </Carousel.Item>
+
       </Carousel>
+  
     </section>
   );
 };
