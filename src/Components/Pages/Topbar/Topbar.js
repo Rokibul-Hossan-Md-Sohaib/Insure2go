@@ -6,7 +6,7 @@ const Topbar = () => {
         <div>
                 <div className="topbar " >
       <ul className="topbar-ul d-flex" >
-     
+      <li className="ms-auto" > <a href="#" className="text-dark ">Opening Time <br /> Mon-Sat 9;00-18;00</a></li>
       <FontAwesomeIcon style={{fontSize: '30px', color: 'yellow' , marginLeft:'70%', marginTop: '10px'}} icon={faEnvelope} /> 
       <li className="ms-auto" > <a href="#" className="text-dark ">Email <br /> e@gmal.com</a></li>
       <FontAwesomeIcon style={{fontSize: '30px', color: 'yellow' , marginRight: '30px', marginTop: '10px'}} icon={faPhone} /> 

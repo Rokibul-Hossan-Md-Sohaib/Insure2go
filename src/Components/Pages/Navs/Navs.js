@@ -40,33 +40,57 @@ const Navs = () => {
                 Home
               </Link>
             </Nav.Link>
+            <NavDropdown className="properties " title="Vehicle Insurance" id="basic-nav-dropdown"  >
+        
+        <NavDropdown.Item  className="my-2 " style={{ fontWeight:"bold", fontSize:"20px" ,color: "#d8810f" }}>
+        <Link to ="/car" className="text-decoration-none properties ">
+          Car Insurance
+          </Link>
+          </NavDropdown.Item>
 
-            <Nav.Link href="#link" className="properties  text-decoration-none">
-              <Link to="/contact" className="text-decoration-none properties">
-                Car Insurance
+       
+        <NavDropdown.Item href="#action/3.2" className="my-2 " style={{ fontWeight:"bold", fontSize:"20px"}}>
+        <Link to ="/bike" className="text-decoration-none properties">
+          Bike Insurance
+          </Link>
+          </NavDropdown.Item>
+
+       
+        <NavDropdown.Item href="#emergency" className="my-2 " style={{ fontWeight:"bold", fontSize:"20px"}}>
+        <Link to ="/van" className="text-decoration-none properties">
+          Van Insurance
+          </Link>
+          </NavDropdown.Item>
+      
+        <NavDropdown.Item href="#action/3.3" className="my-2 " style={{ fontWeight:"bold", fontSize:"20px"}}>
+        <Link to ="/food" className="text-decoration-none properties">
+          Hot Food
+          </Link>
+          </NavDropdown.Item>
+        
+        <NavDropdown.Item href="#action/3.4" className="my-2 " style={{ fontWeight:"bold", fontSize:"20px"}}>
+        <Link to ="/others" className="text-decoration-none properties">
+          Others
+          </Link>
+          </NavDropdown.Item>
+      </NavDropdown>
+
+      <Nav.Link href="#home" className="properties  ">
+              <Link
+                to="/about"
+                className="text-decoration-none properties"
+           
+              >
+        About US
               </Link>
             </Nav.Link>
-
-            <Nav.Link href="#home" className="  ">
-              <Link to="/contact" className="text-decoration-none properties">
-                Van Insurance
-              </Link>
-            </Nav.Link>
-
-            <Nav.Link href="#home" className="  ">
-              <Link to="/contact" className="text-decoration-none properties">
-                Bike Insurance
-              </Link>
-            </Nav.Link>
-            <Nav.Link href="#home" className="  ">
-              <Link to="/contact" className="text-decoration-none properties">
-                Hot Food
-              </Link>
-            </Nav.Link>
-
-            <Nav.Link href="#home" className="  ">
-              <Link to="/contact" className="text-decoration-none properties">
-                Temporary Insurance
+            <Nav.Link href="#home" className="properties  ">
+              <Link
+                to="/Contact"
+                className="text-decoration-none properties"
+             
+              >
+                      Contact
               </Link>
             </Nav.Link>
           </Nav>

@@ -24,7 +24,7 @@
 }
 
 .properties{
-   color: black;
+   color: blue;
     font-size: 22px;
     font-weight: bold;
     margin-left: 30px;
@@ -35,23 +35,24 @@
  
 }
 #home:hover{
-    color: blue;
+    color: #d8810f;
+    cursor: pointer;
 }
 #basic-nav-dropdown{
-    color: white;
-    
+    color: blue;
    
 }
 #basic-nav-dropdown>li{
-   background-color:  blue;
+   background-color:  white;
    font-weight: 500;
+   color: #d8810f;
 }
 
 #basic-nav-dropdown:hover{
-  color: blue;
+    color: #d8810f;
     
    
 }
-NavDropdown.item{
-color: blue;
+.NavDropdown.item{
+    color: #d8810f;
 }

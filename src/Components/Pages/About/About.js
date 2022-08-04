@@ -12,8 +12,7 @@ const About = () => {
             <h2>CAR INSURANCE</h2>
 
             <p className="heading-primary-main ">
-            Most of the time, the prices we find for you are less expensive
-              than those you could find on your own.
+            We make your car insurance premium affordable
            
             </p>
 
@@ -29,7 +28,7 @@ const About = () => {
             <h2 class="et_pb_slide_title">BIKE INSURANCE</h2>
 
             <p className="heading-primary-main">
-            24/7 EMERGENCY SERVICE. LESS THAN 10 MINUTES TO ARRIVE .
+            We make your van insurance premium affordable
             </p>
 
             <Link to="/carFrom" class="btn btn-white btn-animated">
@@ -44,7 +43,7 @@ const About = () => {
             <h2>VAN INSURANCE</h2>
 
             <p className="heading-primary-main">
-              WE JUST GO BEYOUND THE SCOPES OF YOUR EXPECTATIONS.
+            We make your vihicle insurance premium affordable
             </p>
 
             <Link to="/carFrom" class="btn btn-white btn-animated">

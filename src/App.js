@@ -8,8 +8,13 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/carFrom" element={<Form />} />
-        
+        <Route path="/car" element={<Form />} />
+        <Route path="/van" element={<Form />} /> 
+        <Route path="/bike" element={<Form />} />
+        <Route path="/food" element={<Form />} />
+        <Route path="/others" element={<Form />} />
+        <Route path="/terms" element={''} />
+        <Route path="/privacy" element={''} />
       </Routes>
 
     </div>

@@ -1,31 +1,56 @@
 import React from 'react';
 import ServiceShow from './ServiceShow';
-import { faHome, faWarehouse, faAnchor, faUserCog, faArchway, faArrowsAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCar, faBiking, faBicycle, faCarCrash, faMotorcycle} from '@fortawesome/free-solid-svg-icons'
 
  const blogdata =[
 
     {
        
-        name:"CAR INSURANCE",
-       icon: faHome,
-        description: "A majority of commercial buildings have handicap plumbing equipment installed, in order to comply with occupancy codes. We know how…o ",
+        name:"Get Free Quotes",
+       icon: faCar,
+        description: "Most of the time, the prices we find for you are less expensive than those you could find on your own. ",
         background: "primary"
       },
       {
     
-        name:"BIKE INSURANCE",
-        icon: faWarehouse,
+        name:"  Get Free Quotes",
+        icon: faBiking,
         description: "When you are dealing with any kind of water damage, taking a timely action is crucial… Every successful Water Damage… ",
-       
+      
         background: "primary"
       },
       {
     
-        name:"VAN INSURANCE",
-        icon: faAnchor,
+        name:"  Get Free Quotes",
+        icon: faBicycle,
         description: "Like the regular kitchen and bathroom faucets, outdoor faucets can sometimes become damaged or begin to leak. This kind of… ",
         background: "primary"
       },
+      {
+    
+        name:"  Get Free Quotes",
+        icon: faCarCrash,
+        description: "Like the regular kitchen and bathroom faucets, outdoor faucets can sometimes become damaged or begin to leak. This kind of… ",
+        background: "primary"
+      },
+    
+      {
+    
+        name:"  Get Free Quotes",
+        icon: faMotorcycle,
+        description: "Like the regular kitchen and bathroom faucets, outdoor faucets can sometimes become damaged or begin to leak. This kind of… ",
+        background: "primary",
+        link: '/car'
+      },
+    
+      // {
+    
+      //   name:"Get Free Quotes",
+      //   icon: facycl,
+      //   description: "Like the regular kitchen and bathroom faucets, outdoor faucets can sometimes become damaged or begin to leak. This kind of… ",
+      //   background: "primary"
+      // },
+    
    
    
     ]

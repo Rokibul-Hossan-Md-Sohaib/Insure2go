@@ -276,8 +276,16 @@ export default function Steps() {
       </Stepper>
       {activeStep === steps.length ? (
         <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>
-            All steps completed - you&apos;re finished
+          <Typography
+         
+          sx={{ mt: 2, mb: 1 }}>
+            <div style={{justifyContent: 'center', alignItem:'center'}}>
+            <h3 style={{textAlign: 'center'}}>Thanks for submitting!
+
+One of our representatives will call you in the next
+ 4/5 business hours with the cheapest deal available for you.</h3>
+
+            </div>
           </Typography>
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
             <Box sx={{ flex: '1 1 auto' }} />
