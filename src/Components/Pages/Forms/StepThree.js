@@ -358,8 +358,7 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
             className=""
             style={{ marginTop: "10px", marginRight: "40px" }}
           >
-            If Yes, Any motor accidents in the last 5 years--fill up <br /> the
-            detail form{" "}
+            If Yes,  Motor Accidents details {" "}
           </label>
 
           <details className="mt-2 ml-3">
@@ -820,7 +819,7 @@ Any Injuries                 </label>
             className=""
             style={{ marginTop: "10px", marginRight: "50px" }}
           >
-          If Yes, In the last 5 years,  the driver  had any <br /> motoring offences,
+          If Yes, Conviction/Points Details
           </label>
 
           <details className="mt-2 ml-3">
@@ -948,7 +947,7 @@ Ban(Months) - if any :
 
            
 <label className="" style={{ marginTop: "30px" }}>
-    <h1>1</h1>
+    <h1>2</h1>
     Conviction Code :
   </label>
 <Controller

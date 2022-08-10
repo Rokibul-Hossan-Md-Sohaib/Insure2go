@@ -48,8 +48,8 @@ const Footer = () => {
                     <FooterCol key={3} menuTitle="Coplaines" menuItems={complaines}/>
                     <FooterCol col={Colors.secondary} key={4} menuTitle="" menuItems={ourAddress}> 
                     <p >
-                    <FontAwesomeIcon style={{fontSize: '15px', color: 'blue' }} icon={faBehanceSquare} /> <Link className='terms text-decoration-none' to='/' >TERMS & CONDITIONS" </Link> <br />
-                    <FontAwesomeIcon style={{fontSize: '15px', color: 'blue' }} icon={faBehanceSquare} />  <Link className='terms text-decoration-none' to='/' >PRIVACY POLICY</Link> 
+                    <FontAwesomeIcon style={{fontSize: '15px', color: 'blue' }} icon={faBehanceSquare} /> <Link className='terms text-decoration-none' to='/conditions' >TERMS & CONDITIONS" </Link> <br />
+                    <FontAwesomeIcon style={{fontSize: '15px', color: 'blue' }} icon={faBehanceSquare} />  <Link className='terms text-decoration-none' to='/privacy' >PRIVACY POLICY</Link> 
                     </p>
                         <ul className="social-media list-inline">
                             <li className="list-inline-item"><a href="//facebook.com"> <FontAwesomeIcon className='icon' icon={faTwitterSquare} /> </a></li>
@@ -59,7 +59,7 @@ const Footer = () => {
                        
                         <div className="mt-5">
                             <h6>Call now</h6>
-                            <button className="btn btn-danger">+2025550295</button>
+                            <button className="btn btn-danger">+447700173073</button>
                         </div>
                     </FooterCol>
               

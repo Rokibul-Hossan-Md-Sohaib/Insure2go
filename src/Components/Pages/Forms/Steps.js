@@ -16,12 +16,16 @@ import { defaultData } from './Common';
 import StepOne from './StepOne';
 import StepFour from './StepFour';
 
+import axios from 'axios'
+import { Link } from "react-router-dom";
+
 // const steps = 
 // ['Select campaign settings', 
 // 'Create an ad group', 
 // 'Create an ad'];
 
 //case field
+
 
 const steps = [
   "Vehicle Info",
@@ -193,16 +197,33 @@ export default function Steps() {
     return skipped.has(step);
   };
 
-  const handleNext = (data) => {
-    console.log(data)
-    let newSkipped = skipped;
-    if (isStepSkipped(activeStep)) {
-      newSkipped = new Set(newSkipped.values());
-      newSkipped.delete(activeStep);
+  const handleNext = async (data) => {
+    if (activeStep == steps.length - 1){
+      try{
+        return await axios.post("http://localhost:8000/create", data)
+        .then((response) => (console.log(response)),
+  setActiveStep(activeStep +1),
+  );
+      } catch(error){
+  console.log('Error while calling', error)
+      }
     }
+   
+   else{
+    setActiveStep(activeStep +1);
+    setSkipped(skipped.filter((skipItem) => skipItem !==activeStep))
 
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    setSkipped(newSkipped);
+   }
+    //   let newSkipped = skipped;
+    //   if (isStepSkipped(activeStep)) {
+    //     newSkipped = new Set(newSkipped.values());
+    //     newSkipped.delete(activeStep);
+    //     setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    //     setSkipped(newSkipped);
+
+  
+    // }
+
   };
 
   const handleBack = () => {
@@ -234,7 +255,7 @@ export default function Steps() {
     case 0:
       return <StepOne {...props} />;
     case 1:
-      return <StepTwo {...props} />;
+      return <StepTwo {...props}/>
     case 2:
       return <StepThree {...props} />;
       case 3:
@@ -337,6 +358,11 @@ One of our representatives will call you in the next
       )}
     </Box>
     </Container>
+{/* <Link to="/payment">
+
+<Button>Payment</Button>
+</Link> */}
+   
     </>
   );
 }

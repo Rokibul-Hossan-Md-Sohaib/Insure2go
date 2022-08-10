@@ -1,7 +1,7 @@
 import React from "react";
 // import Colors from '../Color.js'
 import "./Navs.css";
-import logo from "../../../images/logoss.png";
+import logoFinal from "../../../images/I2.png";
 import {
   Button,
   Container,
@@ -25,8 +25,8 @@ const Navs = () => {
       style={{ backgroundColor: "#eef2ff" }}
     >
       <Container>
-        <Navbar.Brand href="#home">
-          <img className="logo" src={logo} alt="" />
+        <Navbar.Brand href="/home">
+          <img className="logo" src={logoFinal} alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

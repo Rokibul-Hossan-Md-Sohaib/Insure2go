@@ -16,7 +16,7 @@ const About = () => {
            
             </p>
 
-            <Link to="/carFrom" class="btn btn-white btn-animated">
+            <Link to="/car" class="btn btn-white btn-animated">
 
             Get Free Quotes
             </Link>
@@ -31,7 +31,7 @@ const About = () => {
             We make your van insurance premium affordable
             </p>
 
-            <Link to="/carFrom" class="btn btn-white btn-animated">
+            <Link to="/car" class="btn btn-white btn-animated">
             Get Free Quotes
             </Link>
            
@@ -46,7 +46,7 @@ const About = () => {
             We make your vihicle insurance premium affordable
             </p>
 
-            <Link to="/carFrom" class="btn btn-white btn-animated">
+            <Link to="/car" class="btn btn-white btn-animated">
             Get Free Quotes
             </Link>
           </div>

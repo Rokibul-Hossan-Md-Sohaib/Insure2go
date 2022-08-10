@@ -51,7 +51,6 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-         
               label=""
               variant="outlined"
               halfwidth
@@ -306,7 +305,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
         </label>
         <Controller
           control={control}
-          name="vAnyNoDiscount"
+          name="vNCDEarned"
           render={({ field }) => (
             <select
               className="form-control col-7"
@@ -333,8 +332,10 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           control={control}
           name="vProtectNCD"
           render={({ field }) => (
+ 
             <select
               className="form-control col-7"
+              
               {...field}
               style={{ width: "50%" }}
             >
@@ -418,7 +419,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
             />
           )}
         />
-      </div>
+      </div> 
     </>
   );
 };

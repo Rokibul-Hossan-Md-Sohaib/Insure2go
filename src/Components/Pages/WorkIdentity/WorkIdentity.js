@@ -14,8 +14,8 @@ const WorkIdentity = () => {
               our personnel is multilingual, devoted, and ready to help, we can
               provide extremely helpful assistance to the most vulnerable
               customers. Additionally, before using our services, it is strongly
-              urged that you fully comprehend our a <a href="#" class="text-uppercase fw-bold text-dark">Terms & Conditions </a> 
-             and <a href="#" class="text-uppercase fw-bold text-dark"> Privacy Policy </a>. We are not employed by any particular business as a broker
+              urged that you fully comprehend our a <a href="/conditions" class="text-uppercase fw-bold text-dark">Terms & Conditions </a> 
+             and <a href="privacy" class="text-uppercase fw-bold text-dark"> Privacy Policy </a>. We are not employed by any particular business as a broker
               or representative. The "Data Protection Act & General Data
               Protection Regulation" protects all of your information, and we
               are registered with the Information Commissioner's Office (ICO)
