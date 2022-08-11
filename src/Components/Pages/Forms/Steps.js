@@ -200,7 +200,7 @@ export default function Steps() {
   const handleNext = async (data) => {
     if (activeStep == steps.length - 1){
       try{
-        return await axios.post("http://localhost:8000/create", data)
+        return await axios.post("https://lit-garden-29405.herokuapp.com/create", data)
         .then((response) => (console.log(response)),
   setActiveStep(activeStep +1),
   );

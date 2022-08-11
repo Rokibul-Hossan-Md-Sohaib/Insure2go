@@ -314,7 +314,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
             >
               <option>---select---</option>
               {vNCDEarned &&
-                vAnyNoDiscount.map((h, i) => (
+                vNCDEarned.map((h, i) => (
                   <option key={i} value={h.vNCDEarned}>
                     {h.By}
                   </option>
