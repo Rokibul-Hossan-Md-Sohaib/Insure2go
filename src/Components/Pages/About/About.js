@@ -28,7 +28,7 @@ const About = () => {
             <h2 class="et_pb_slide_title">BIKE INSURANCE</h2>
 
             <p className="heading-primary-main">
-            We make your van insurance premium affordable
+            We make your bike insurance premium affordable
             </p>
 
             <Link to="/car" class="btn btn-white btn-animated">
@@ -43,7 +43,7 @@ const About = () => {
             <h2>VAN INSURANCE</h2>
 
             <p className="heading-primary-main">
-            We make your vihicle insurance premium affordable
+            We make your vehicle insurance premium affordable
             </p>
 
             <Link to="/car" class="btn btn-white btn-animated">

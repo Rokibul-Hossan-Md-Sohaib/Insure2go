@@ -77,7 +77,7 @@ const Navs = () => {
 
       <Nav.Link href="#home" className="properties  ">
               <Link
-                to="/about"
+                to="/aboutUs"
                 className="text-decoration-none properties"
            
               >
@@ -86,7 +86,7 @@ const Navs = () => {
             </Nav.Link>
             <Nav.Link href="#home" className="properties  ">
               <Link
-                to="/Contact"
+                to="/contact"
                 className="text-decoration-none properties"
              
               >

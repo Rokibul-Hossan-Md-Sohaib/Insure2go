@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Fstyle.css'
 
 import Box from '@mui/material/Box';
@@ -197,10 +197,12 @@ export default function Steps() {
     return skipped.has(step);
   };
 
+ 
   const handleNext = async (data) => {
     if (activeStep == steps.length - 1){
       try{
-        return await axios.post("https://lit-garden-29405.herokuapp.com/create", data)
+        return await axios.post("/create", data
+        )
         .then((response) => (console.log(response)),
   setActiveStep(activeStep +1),
   );
@@ -225,6 +227,9 @@ export default function Steps() {
     // }
 
   };
+
+
+
 
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
