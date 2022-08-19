@@ -1,5 +1,6 @@
 import {
   Container,
+  FormHelperText,
   InputLabel,
   MenuItem,
   Select,
@@ -50,6 +51,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           name="vRegistration"
           render={({ field }) => (
             <TextField
+            required 
               className="col-4"
               label=""
               variant="outlined"
@@ -70,7 +72,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-         
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -88,22 +90,25 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
         <Controller
           control={control}
           name="vModification"
+          
           render={({ field }) => (
             <select
+            requred 
               className="form-control col-7"
               {...field}
               style={{ width: "50%" }}
             >
-              <option>---select---</option>
+              <option >---select---</option>
               {vModification &&
                 vModification.map((h, i) => (
-                  <option key={i} value={h.vModification}>
+                  <option required key={i} value={h.vModification}>
                     {h.By}
                   </option>
                 ))}
             </select>
           )}
         />
+           
       </div>
 
       <h1 className="mt-5">Vehicle Usage</h1>
@@ -118,7 +123,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-         
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -180,6 +185,56 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
         />
       </div>
 
+
+      <div  className="d-flex row">
+        <label className="col-4" style={{ marginTop: "10px" }}>
+        Where is the vehicle kept overnight * :
+        </label>
+        <Controller
+          control={control}
+          name="vKeptOvernight"
+          render={({ field }) => (
+            <select
+              className="form-control col-7"
+              {...field}
+              style={{ width: "50%" }}
+            >
+              <option>---select---</option>
+              {vKeptOvernight &&
+                vKeptOvernight.map((h, i) => (
+                  <option key={i} value={h.vKeptOvernight}>
+                    {h.By}
+                  </option>
+                ))}
+            </select>
+          )}
+        />
+      </div>
+
+      <div  className="d-flex row">
+        <label className="col-4" style={{ marginTop: "10px" }}>
+        Is the vehicle kept at the same address * :
+        </label>
+        <Controller
+          control={control}
+          name="vKeptSameAddress"
+          render={({ field }) => (
+            <select
+              className="form-control col-7"
+              {...field}
+              style={{ width: "50%" }}
+            >
+              <option>---select---</option>
+              {vKeptSameAddress &&
+                vKeptSameAddress.map((h, i) => (
+                  <option key={i} value={h.vKeptSameAddress}>
+                    {h.By}
+                  </option>
+                ))}
+            </select>
+          )}
+        />
+      </div>
       <div  className="d-flex row">
         <label className="col-4" style={{ marginTop: "10px" }}>
         Registered Keeper * :
@@ -238,7 +293,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-         
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -410,7 +465,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-         
+              required 
               label=""
               variant="outlined"
               halfwidth

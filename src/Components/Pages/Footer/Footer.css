@@ -11,16 +11,7 @@
 .footer-area li{
     padding-bottom: 10px;
 }
-.footer-area::before{
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  background-color: white;
-    opacity: .2;
-    top: 0;
-}
+
 
 .social-media .icon{
     height: 40px;

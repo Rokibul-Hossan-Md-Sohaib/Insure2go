@@ -13,7 +13,7 @@ const AboutUs = () => {
 
         <div className="mt-5" style={{ margin: "20px" }}>
           <p style={{ margin: "20px", lineHeight: "2.3" }} className="mb-3">
-            We <strong>'Insure To Go'</strong> Trading Under Sort Services Ltd
+            We <strong>'Insure To Go'</strong> 
             are passionate about providing you with hundreds of quotes from
             online & offline markets along with smooth customer service start to
             finish. We aim to work with you step by step to assist you with free

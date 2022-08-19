@@ -21,19 +21,19 @@ const Footer = () => {
         // {name: " PRIVACY POLICY" , link: "/checkup"},
        
     ]
-    const complaines = [
-        {name: "Any Kind Of complains" , link: "/emergency"},
-        {name: "Check Reviews" , link: "/checkup"},
-        {name: "Personal Openion" , link: "/personal-treatment"},
-        {name: "Behaiviors" , link: "/tooth-extract"},
+    // const complaines = [
+    //     {name: "Any Kind Of complains" , link: "/emergency"},
+    //     {name: "Check Reviews" , link: "/checkup"},
+    //     {name: "Personal Openion" , link: "/personal-treatment"},
+    //     {name: "Behaiviors" , link: "/tooth-extract"},
      
-    ]
+    // ]
     const services = [
-        {name: "HomeDelivery" , link: "/delivary"},
-        {name: "Check Up Food" , link: "/checkup"},
-        {name: "Respect Your Reviews" , link: "/review"},
-        {name: "Any Kind Of Healty Foods" , link: "/food"},
-        {name: "Best Cook" , link: "/checkup"},
+        {name: "Car Insurance Services" , link: "/car"},
+        {name: "Hot Food Service" , link: "/checkup"},
+        {name: "Van Insurance Services" , link: "/van"},
+        {name: "Bike Insurance Services" , link: "/bike"},
+       
         
     ]
     return (
@@ -45,12 +45,16 @@ const Footer = () => {
 
                     </FooterCol>
                     <FooterCol key={2} menuTitle="Services" menuItems={services}/>
-                    <FooterCol key={3} menuTitle="Coplaines" menuItems={complaines}/>
+                    {/* <FooterCol key={3} menuTitle="Coplaines" menuItems={complaines}/> */}
                     <FooterCol col={Colors.secondary} key={4} menuTitle="" menuItems={ourAddress}> 
-                    <p >
-                    <FontAwesomeIcon style={{fontSize: '15px', color: 'blue' }} icon={faBehanceSquare} /> <Link className='terms text-decoration-none' to='/conditions' >TERMS & CONDITIONS" </Link> <br />
-                    <FontAwesomeIcon style={{fontSize: '15px', color: 'blue' }} icon={faBehanceSquare} />  <Link className='terms text-decoration-none' to='/privacy' >PRIVACY POLICY</Link> 
-                    </p>
+                
+                    <FontAwesomeIcon className='terms text-decoration-none' style={{fontSize: '15px', color: 'blue' }} icon={faBehanceSquare} /> <Link  to='/conditions' >TERMS & CONDITIONS" </Link> <br />
+              
+           
+                    <FontAwesomeIcon className='terms text-decoration-none' style={{fontSize: '15px', color: 'blue' }} icon={faBehanceSquare} />  <Link  to='/privacy' >PRIVACY POLICY</Link> 
+
+              
+
                         <ul className="social-media list-inline">
                             <li className="list-inline-item"><a href="//facebook.com"> <FontAwesomeIcon className='icon' icon={faTwitterSquare} /> </a></li>
                             <li className="list-inline-item"><a href="//google.com"><FontAwesomeIcon className='icon' icon={faFacebook} /> </a></li>

@@ -176,9 +176,9 @@ export default function Steps() {
   // const [formData, setForm] = useForm(defaultData);
   const [formData, setFormData] = useState(defaultData);
 
-  console.log("formdata", formData)
+  // console.log("formdata", formData)
   const methods =useForm({formData})
-  console.log("method", methods)
+  // console.log("method", methods)
   const {register ,handleSubmit} =useForm()
   const props = { formData, register };
   const { step, navigation } = useStep({
@@ -201,9 +201,10 @@ export default function Steps() {
   const handleNext = async (data) => {
     if (activeStep == steps.length - 1){
       try{
-        return await axios.post("/create", data
+        return await axios.post("http://inusures.insuretogo.uk/addProduct", data
         )
-        .then((response) => (console.log(response)),
+        .then((response) => 
+        (console.log(response)),
   setActiveStep(activeStep +1),
   );
       } catch(error){

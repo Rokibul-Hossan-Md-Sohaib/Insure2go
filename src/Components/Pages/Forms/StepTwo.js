@@ -73,6 +73,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           name="pReferrer"
           render={({ field }) => (
             <TextField
+            required 
               className="col-4"
               id="pReferrer"
               label=""
@@ -88,7 +89,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
 
       <div div className="d-flex row">
         <label className="col-4" style={{ marginTop: "10px" }}>
-          How did you hear about us?  :
+        Have you or any of the drivers ever had insurance declined, cancelled or special terms imposed? :
         </label>
         <Controller
           control={control}
@@ -125,6 +126,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           name="pTitle"
           render={({ field }) => (
             <TextField
+            required 
               className="col-4"
               id="pTitle"
               label=""
@@ -167,7 +169,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-        
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -187,7 +189,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-        
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -207,7 +209,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-        
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -227,7 +229,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-        
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -296,7 +298,7 @@ Employment Status *:      </label>
           render={({ field }) => (
             <TextField
               className="col-4"
-        
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -317,7 +319,7 @@ Employment Status *:      </label>
           render={({ field }) => (
             <TextField
               className="col-4"
-        
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -390,7 +392,7 @@ Employment Status *:      </label>
           render={({ field }) => (
             <TextField
               className="col-4"
-            
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -410,7 +412,7 @@ Employment Status *:      </label>
           render={({ field }) => (
             <TextField
               className="col-4"
-            
+              required 
               label=""
               variant="outlined"
               halfwidth
@@ -432,7 +434,7 @@ Employment Status *:      </label>
           render={({ field }) => (
             <TextField
               className="col-4"
-            
+              required 
               label=""
               variant="outlined"
               halfwidth

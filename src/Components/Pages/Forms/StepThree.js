@@ -41,7 +41,7 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
 
   const { control } = useFormContext();
   const [update, setUpdate] = useState(dAnyMotorAccident);
-  console.log("updateees", update);
+  // console.log("updateees", update);
   const [values, setValues] = useState();
   const myfunc = () => {
     return <div>hello</div>;
@@ -254,7 +254,7 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
           </label>
           <Controller
             control={control}
-            name="dUseOtherVehicle"
+            name="dLastUkResident"
             render={({ field }) => (
               <TextField
                 className="col-4"
@@ -361,7 +361,9 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
             If Yes,  Motor Accidents details {" "}
           </label>
 
-          <details className="mt-2 ml-3">
+          <details className="mt-2 ml-5" 
+           style={{ marginLeft: "120px" }}
+          >
             <summary style={{ color: "gray", border: '2px solid gray' }}>
               Motor Accidents Or Claim Details
             </summary>
@@ -822,7 +824,9 @@ Any Injuries                 </label>
           If Yes, Conviction/Points Details
           </label>
 
-          <details className="mt-2 ml-3">
+          <details className="mt-2 ml-3"
+               style={{ marginLeft: "100px" }}
+          >
             <summary style={{ color: "gray", border: '2px solid gray' }}>
             Motor Conviction, Fixed Penalty Or br Disqualification Details
             </summary>
