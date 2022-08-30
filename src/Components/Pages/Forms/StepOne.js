@@ -51,7 +51,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           name="vRegistration"
           render={({ field }) => (
             <TextField
-            required 
+            kkk 
               className="col-4"
               label=""
               variant="outlined"
@@ -72,7 +72,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -101,7 +101,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
               <option >---select---</option>
               {vModification &&
                 vModification.map((h, i) => (
-                  <option required key={i} value={h.vModification}>
+                  <option kkk key={i} value={h.vModification}>
                     {h.By}
                   </option>
                 ))}
@@ -123,7 +123,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -293,7 +293,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -465,7 +465,7 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth

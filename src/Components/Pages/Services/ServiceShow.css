@@ -1,11 +1,11 @@
 
 
 .cor-primary{
-    background-color: RGB(83, 83, 83);
+    background-color:#b10f45;
 }
 
 .cor-dark{
-    background-color:#3E4659;
+    background-color:#b10f45;
 }
 .info-container {
     height: 200px;
@@ -15,7 +15,7 @@
 
 .info-icon{
     font-size: 5em;
-    color: RGB(83, 83, 83);
+    /* color: RGB(83, 83, 83); */
    
 }
 .icon{

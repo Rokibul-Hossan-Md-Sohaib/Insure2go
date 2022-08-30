@@ -73,7 +73,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           name="pReferrer"
           render={({ field }) => (
             <TextField
-            required 
+            kkk 
               className="col-4"
               id="pReferrer"
               label=""
@@ -126,7 +126,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           name="pTitle"
           render={({ field }) => (
             <TextField
-            required 
+            kkk 
               className="col-4"
               id="pTitle"
               label=""
@@ -169,7 +169,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -189,7 +189,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -209,7 +209,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -229,7 +229,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -298,7 +298,7 @@ Employment Status *:      </label>
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -319,7 +319,7 @@ Employment Status *:      </label>
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -392,7 +392,7 @@ Employment Status *:      </label>
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -412,7 +412,7 @@ Employment Status *:      </label>
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth
@@ -434,7 +434,7 @@ Employment Status *:      </label>
           render={({ field }) => (
             <TextField
               className="col-4"
-              required 
+              kkk 
               label=""
               variant="outlined"
               halfwidth

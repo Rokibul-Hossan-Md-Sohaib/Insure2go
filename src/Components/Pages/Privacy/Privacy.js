@@ -69,7 +69,7 @@ To stop cookies from being installed on your computer you can configure your bro
 <br />
 
 <h6 className='mt-4'>15. Legal Disclaimer</h6>
-The Government, Regulatory body or Law Agencies have the right to contact us to disclose personal information that we hold on you. In such circumstances in order to comply by law and with legal processes we will have to disclose the required information in good faith (and by law) that such action is necessary.
+The Government, Regulatory body or Law Agencies have the right to contact us to disclose personal information that we hold on you. In such circumstances in order to comply by law and with legal processes we will have to disclose the kkk information in good faith (and by law) that such action is necessary.
 <br />
 
 <h6 className='mt-4'>16. Termination of Your Rights</h6>

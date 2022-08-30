@@ -1,7 +1,7 @@
 import React from 'react';
 import ServiceShow from './ServiceShow';
 import { faCar, faBiking, faBicycle, faCarCrash, faMotorcycle} from '@fortawesome/free-solid-svg-icons'
-
+import findcar from '../../../images/findcar.png'
  const blogdata =[
 
     {
