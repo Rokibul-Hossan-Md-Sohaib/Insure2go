@@ -41,7 +41,8 @@ const steps = [
   //     case 0:
   //       return (
   //         <>
-  //           <TextField
+  //             <TextField
+      
   //             id="first-name"
   //             label="First Name"
   //             variant="outlined"
@@ -50,7 +51,8 @@ const steps = [
   //             margin="normal"
   //             name="firstName"
   //           />
-  //           <TextField
+  //             <TextField
+      
   //             id="last-name"
   //             label="Last Name"
   //             variant="outlined"
@@ -59,7 +61,8 @@ const steps = [
   //             margin="normal"
   //             name="lastName"
   //           />
-  //           <TextField
+  //             <TextField
+      
   //             id="nick-name"
   //             label="Nick Name"
   //             variant="outlined"
@@ -74,7 +77,8 @@ const steps = [
   //     case 1:
   //       return (
   //         <>
-  //           <TextField
+  //             <TextField
+      
   //             id="email"
   //             label="E-mail"
   //             variant="outlined"
@@ -83,7 +87,8 @@ const steps = [
   //             margin="normal"
   //             name="emailAddress"
   //           />
-  //           <TextField
+  //             <TextField
+      
   //             id="phone-number"
   //             label="Phone Number"
   //             variant="outlined"
@@ -92,7 +97,8 @@ const steps = [
   //             margin="normal"
   //             name="phoneNumber"
   //           />
-  //           <TextField
+  //             <TextField
+      
   //             id="alternate-phone"
   //             label="Alternate Phone"
   //             variant="outlined"
@@ -106,7 +112,8 @@ const steps = [
   //     case 2:
   //       return (
   //         <>
-  //           <TextField
+  //             <TextField
+      
   //             id="address1"
   //             label="Address 1"
   //             variant="outlined"
@@ -115,7 +122,8 @@ const steps = [
   //             margin="normal"
   //             name="address1"
   //           />
-  //           <TextField
+  //             <TextField
+      
   //             id="address2"
   //             label="Address 2"
   //             variant="outlined"
@@ -124,7 +132,8 @@ const steps = [
   //             margin="normal"
   //             name="address2"
   //           />
-  //           <TextField
+  //             <TextField
+      
   //             id="country"
   //             label="Country"
   //             variant="outlined"
@@ -138,7 +147,8 @@ const steps = [
   //     case 3:
   //       return (
   //         <>
-  //           <TextField
+  //             <TextField
+      
   //             id="cardNumber"
   //             label="Card Number"
   //             variant="outlined"
@@ -147,7 +157,8 @@ const steps = [
   //             margin="normal"
   //             name="cardNumber"
   //           />
-  //           <TextField
+  //             <TextField
+      
   //             id="cardMonth"
   //             label="Card Month"
   //             variant="outlined"
@@ -156,7 +167,8 @@ const steps = [
   //             margin="normal"
   //             name="cardMonth"
   //           />
-  //           <TextField
+  //             <TextField
+      
   //             id="cardYear"
   //             label="Card Year"
   //             variant="outlined"

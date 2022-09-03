@@ -50,7 +50,8 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           control={control}
           name="vRegistration"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
             kkk 
               className="col-4"
               label=""
@@ -70,7 +71,8 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           control={control}
           name="vApproxValueCar"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""
@@ -121,7 +123,9 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           control={control}
           name="vDatePurchase"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
+          
               className="col-4"
               kkk 
               label=""
@@ -291,7 +295,8 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           control={control}
           name="vAnnualmileage"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""
@@ -463,7 +468,8 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
           control={control}
           name="vPolicyStart"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""

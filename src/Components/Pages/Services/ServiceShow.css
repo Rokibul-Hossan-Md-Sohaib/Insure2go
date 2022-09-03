@@ -9,17 +9,28 @@
 }
 .info-container {
     height: 200px;
-    padding: 30px;
+    padding: 70px;
+    margin-top: 45px;
     
 }
 
 .info-icon{
-    font-size: 5em;
+    width: 150px;
+    height: 130px;
     /* color: RGB(83, 83, 83); */
    
 }
 .icon{
-    margin-right:  20px;
+    margin-right:  30px;
+
+    background: #FF7A59;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-items: center;
+  padding: 28px;
+ 
+ 
 }
 .info-icon:hover {
 cursor: pointer;
@@ -28,4 +39,5 @@ color: blanchedalmond;
 .texts{
     text-decoration: none;
     color: gray;
+    margin-left: 50px;
 }

@@ -118,7 +118,8 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
             control={control}
             name="dYearsLicenceObtained"
             render={({ field }) => (
-              <TextField
+                <TextField
+           
                 className="col-4"
                 id="pReferrer"
                 label=""
@@ -139,7 +140,8 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
             control={control}
             name="d16DeivingLicence"
             render={({ field }) => (
-              <TextField
+                <TextField
+           
                 className="col-4"
                 id="pReferrer"
                 label=""
@@ -210,7 +212,8 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
             control={control}
             name="dDateQualified"
             render={({ field }) => (
-              <TextField
+                <TextField
+           
                 className="col-4"
                 id="pReferrer"
                 label=""
@@ -256,7 +259,8 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
             control={control}
             name="dLastUkResident"
             render={({ field }) => (
-              <TextField
+                <TextField
+           
                 className="col-4"
                 id="pReferrer"
                 label=""
@@ -406,7 +410,8 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
                   control={control}
                   name="deDate"
                   render={({ field }) => (
-                    <TextField
+                      <TextField
+           
                       sx={{ display: "block" }}
                       id="pReferrer"
                       label=""
@@ -448,7 +453,8 @@ Cost(£) - if known :
                control={control}
                name="deCost"
                render={({ field }) => (
-                 <TextField
+                   <TextField
+           
                    sx={{ display: "block" }}
                    id="pReferrer"
                    label=""
@@ -542,7 +548,8 @@ Any Injuries                 </label>
                   control={control}
                   name="deDate2"
                   render={({ field }) => (
-                    <TextField
+                      <TextField
+           
                       sx={{ display: "block" }}
                       id="pReferrer"
                       label=""
@@ -584,7 +591,8 @@ Cost(£) - if known :
                control={control}
                name="deCost2"
                render={({ field }) => (
-                 <TextField
+                   <TextField
+           
                    sx={{ display: "block" }}
                    id="pReferrer"
                    label=""
@@ -680,7 +688,8 @@ Any Injuries                 </label>
                   control={control}
                   name="deDate3"
                   render={({ field }) => (
-                    <TextField
+                      <TextField
+           
                       sx={{ display: "block" }}
                       id="pReferrer"
                       label=""
@@ -722,7 +731,8 @@ Cost(£) - if known :
                control={control}
                name="deCost3"
                render={({ field }) => (
-                 <TextField
+                   <TextField
+           
                    sx={{ display: "block" }}
                    id="pReferrer"
                    label=""
@@ -869,7 +879,8 @@ Any Injuries                 </label>
                   control={control}
                   name="deDateConvection"
                   render={({ field }) => (
-                    <TextField
+                      <TextField
+           
                       sx={{ display: "block" }}
                       id="pReferrer"
                       label=""
@@ -911,7 +922,8 @@ Fine(£) - if any :
                control={control}
                name="deFine"
                render={({ field }) => (
-                 <TextField
+                   <TextField
+           
                    sx={{ display: "block" }}
                    id="pReferrer"
                    label=""
@@ -931,7 +943,8 @@ Ban(Months) - if any :
                control={control}
                name="deBan"
                render={({ field }) => (
-                 <TextField
+                   <TextField
+           
                    sx={{ display: "block" }}
                    id="pReferrer"
                    label=""
@@ -982,7 +995,8 @@ render={({ field }) => (
     control={control}
     name="deDateConvection2"
     render={({ field }) => (
-      <TextField
+        <TextField
+           
         sx={{ display: "block" }}
         id="pReferrer"
         label=""
@@ -1024,7 +1038,8 @@ Fine(£) - if any :
  control={control}
  name="deFine2"
  render={({ field }) => (
-   <TextField
+     <TextField
+           
      sx={{ display: "block" }}
      id="pReferrer"
      label=""
@@ -1044,7 +1059,8 @@ Ban(Months) - if any :
  control={control}
  name="deBan2"
  render={({ field }) => (
-   <TextField
+     <TextField
+           
      sx={{ display: "block" }}
      id="pReferrer"
      label=""
@@ -1094,7 +1110,8 @@ render={({ field }) => (
     control={control}
     name="deDateConvection3"
     render={({ field }) => (
-      <TextField
+        <TextField
+           
         sx={{ display: "block" }}
         id="pReferrer"
         label=""
@@ -1136,7 +1153,8 @@ Fine(£) - if any :
  control={control}
  name="deFine3"
  render={({ field }) => (
-   <TextField
+     <TextField
+           
      sx={{ display: "block" }}
      id="pReferrer"
      label=""
@@ -1156,7 +1174,8 @@ Ban(Months) - if any :
  control={control}
  name="deBan3"
  render={({ field }) => (
-   <TextField
+     <TextField
+           
      sx={{ display: "block" }}
      id="pReferrer"
      label=""

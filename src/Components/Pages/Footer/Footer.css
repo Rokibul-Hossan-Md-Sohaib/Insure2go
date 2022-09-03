@@ -39,3 +39,15 @@
 .terms:hover{
     cursor: pointer;
 }
+.icons{
+    margin-top: 10px;
+margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 50% ;
+    align-items: center;
+  padding: 28px;
+
+ 
+}

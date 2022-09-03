@@ -67,7 +67,8 @@ const toggel = () => {
           control={control}
           name="ayTitle"
           render={({ field }) => (
-            <TextField
+              <TextField
+           
               className="col-6"
               label=""
               variant="outlined"
@@ -86,7 +87,8 @@ const toggel = () => {
           control={control}
           name="ayName"
           render={({ field }) => (
-            <TextField
+              <TextField
+           
             className="col-6"
               id="ayName"
               label=""
@@ -105,7 +107,8 @@ const toggel = () => {
           control={control}
           name="aySurName"
           render={({ field }) => (
-            <TextField
+              <TextField
+           
             className="col-6"
               id="aySurName"
               label=""
@@ -151,7 +154,8 @@ const toggel = () => {
           control={control}
           name="ayBirthDate"
           render={({ field }) => (
-            <TextField
+              <TextField
+           
             className="col-6"
               label=""
               variant="outlined"
@@ -220,7 +224,8 @@ const toggel = () => {
           control={control}
           name="ayEmployedOccupation"
           render={({ field }) => (
-            <TextField
+              <TextField
+           
             className="col-6"
               label=""
               variant="outlined"
@@ -239,7 +244,8 @@ const toggel = () => {
           control={control}
           name="ayEmployedBusiness"
           render={({ field }) => (
-            <TextField
+              <TextField
+           
             className="col-6"
               label=""
               variant="outlined"
@@ -308,7 +314,8 @@ const toggel = () => {
           control={control}
           name="ay3yearLicenceObtain"
           render={({ field }) => (
-            <TextField
+              <TextField
+           
             className="col-6"
               label=""
               variant="outlined"
@@ -327,7 +334,8 @@ const toggel = () => {
           control={control}
           name="ayDrivingLicence"
           render={({ field }) => (
-            <TextField
+              <TextField
+           
             className="col-6"
               label=""
               variant="outlined"
@@ -397,7 +405,8 @@ const toggel = () => {
           control={control}
           name="ayWhereResidentUk"
           render={({ field }) => (
-            <TextField
+              <TextField
+           
             className="col-6"
               label=""
               variant="outlined"
@@ -498,7 +507,8 @@ const toggel = () => {
           control={control}
           name="adAddComents"
           render={({ field }) => (
-            <TextField
+              <TextField
+           
               className="col-4"
               multiline
               rows={4}

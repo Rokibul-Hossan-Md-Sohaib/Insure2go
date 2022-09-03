@@ -72,7 +72,8 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           control={control}
           name="pReferrer"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
             kkk 
               className="col-4"
               id="pReferrer"
@@ -125,7 +126,8 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           control={control}
           name="pTitle"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
             kkk 
               className="col-4"
               id="pTitle"
@@ -146,7 +148,8 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           control={control}
           name="pFullName"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               id="pFullName"
               label=""
@@ -167,7 +170,8 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           control={control}
           name="pBrith"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""
@@ -187,7 +191,8 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           control={control}
           name="PHousNam"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""
@@ -207,7 +212,8 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           control={control}
           name="pAddress"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""
@@ -227,7 +233,8 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           control={control}
           name="pPostCode"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""
@@ -275,7 +282,8 @@ Employment Status *:      </label>
           control={control}
           name="pEmStatus"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
         
               label=""
@@ -296,7 +304,8 @@ Employment Status *:      </label>
           control={control}
           name="pOcuupation"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""
@@ -317,7 +326,8 @@ Employment Status *:      </label>
           control={control}
           name="pBusiness"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""
@@ -390,7 +400,8 @@ Employment Status *:      </label>
           control={control}
           name="cEmail"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""
@@ -410,7 +421,8 @@ Employment Status *:      </label>
           control={control}
           name="cMoble"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""
@@ -432,7 +444,8 @@ Employment Status *:      </label>
           control={control}
           name="cTelephone"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               kkk 
               label=""

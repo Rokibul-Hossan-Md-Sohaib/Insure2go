@@ -55,7 +55,8 @@ const StepFourSubCategories = ({
           control={control}
           name="ayTitle"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               label=""
               variant="outlined"
@@ -74,7 +75,8 @@ const StepFourSubCategories = ({
           control={control}
           name="ayName"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               id="ayName"
               label=""
@@ -93,7 +95,8 @@ const StepFourSubCategories = ({
           control={control}
           name="aySurName"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               id="aySurName"
               label=""
@@ -139,7 +142,8 @@ const StepFourSubCategories = ({
           control={control}
           name="ayBirthDate"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               label=""
               variant="outlined"
@@ -208,7 +212,8 @@ const StepFourSubCategories = ({
           control={control}
           name="ayEmployedOccupation"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               label=""
               variant="outlined"
@@ -227,7 +232,8 @@ const StepFourSubCategories = ({
           control={control}
           name="ayEmployedBusiness"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               label=""
               variant="outlined"
@@ -296,7 +302,8 @@ const StepFourSubCategories = ({
           control={control}
           name="ay3yearLicenceObtain"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               label=""
               variant="outlined"
@@ -315,7 +322,8 @@ const StepFourSubCategories = ({
           control={control}
           name="ayDrivingLicence"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               label=""
               variant="outlined"
@@ -385,7 +393,8 @@ const StepFourSubCategories = ({
           control={control}
           name="ayWhereResidentUk"
           render={({ field }) => (
-            <TextField
+              <TextField
+            required
               className="col-4"
               label=""
               variant="outlined"

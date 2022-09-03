@@ -56,9 +56,9 @@ const Footer = () => {
               
 
                         <ul className="social-media list-inline">
-                            <li className="list-inline-item"><a href="//facebook.com"> <FontAwesomeIcon className='icon' icon={faTwitterSquare} /> </a></li>
-                            <li className="list-inline-item"><a href="//google.com"><FontAwesomeIcon className='icon' icon={faFacebook} /> </a></li>
-                            <li className="list-inline-item"><a href="//google.com"><FontAwesomeIcon className='icon' icon={faLinkedin} /> </a></li>
+                            <li className="list-inline-item"><a href="//facebook.com"> <FontAwesomeIcon className='icons' icon={faTwitterSquare} /> </a></li>
+                            <li className="list-inline-item"><a href="//google.com"><FontAwesomeIcon className='icons' icon={faFacebook} /> </a></li>
+                            <li className="list-inline-item"><a href="//google.com"><FontAwesomeIcon className='icons' icon={faLinkedin} /> </a></li>
                         </ul>
                        
                         <div className="mt-5">

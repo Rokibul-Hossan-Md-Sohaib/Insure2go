@@ -35,7 +35,7 @@ const Navs = () => {
               <Link
                 to="/"
                 className="text-decoration-none properties"
-                style={{ color: "#d8810f" }}
+                style={{ color: "#22d3ee" }}
               >
                 Home
               </Link>
