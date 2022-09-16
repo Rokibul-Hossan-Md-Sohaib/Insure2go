@@ -19,7 +19,8 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
     pReferrer,
     pAnyDriver,
     pTitle,
-    pFullName,
+    pFirstName,
+    pLastName,
     pBrith,
     PHousNam,
     pAddress,
@@ -73,7 +74,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           name="pReferrer"
           render={({ field }) => (
               <TextField
-            required
+             required
             kkk 
               className="col-4"
               id="pReferrer"
@@ -127,7 +128,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           name="pTitle"
           render={({ field }) => (
               <TextField
-            required
+             required
             kkk 
               className="col-4"
               id="pTitle"
@@ -143,15 +144,15 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
 
       <div className="d-flex row">
         <label className="d-flex col-4" style={{ marginTop: "30px" }}>
-        Full Name:         </label>
+        First Name:         </label>
         <Controller
           control={control}
-          name="pFullName"
+          name="pFirstName"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
-              id="pFullName"
+              id="pFirstName"
               label=""
               variant="outlined"
               halfwidth
@@ -165,13 +166,34 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
 
       <div className="d-flex row">
         <label className="d-flex col-4" style={{ marginTop: "30px" }}>
+        Last Name:         </label>
+        <Controller
+          control={control}
+          name="pLastName"
+          render={({ field }) => (
+              <TextField
+             required
+              className="col-4"
+              id="pLastName"
+              label=""
+              variant="outlined"
+              halfwidth
+              margin="normal"
+              {...field}
+            />
+          )}
+        />
+      </div>
+
+      <div className="d-flex row">
+        <label className="d-flex col-4" style={{ marginTop: "30px" }}>
         Date Of Birth:         </label>
         <Controller
           control={control}
           name="pBrith"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
               kkk 
               label=""
@@ -192,7 +214,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           name="PHousNam"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
               kkk 
               label=""
@@ -213,7 +235,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           name="pAddress"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
               kkk 
               label=""
@@ -234,7 +256,7 @@ const StepTwo = ({ formData, setForm, navigation, methods, register }) => {
           name="pPostCode"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
               kkk 
               label=""
@@ -283,7 +305,7 @@ Employment Status *:      </label>
           name="pEmStatus"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
         
               label=""
@@ -305,7 +327,7 @@ Employment Status *:      </label>
           name="pOcuupation"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
               kkk 
               label=""
@@ -327,7 +349,7 @@ Employment Status *:      </label>
           name="pBusiness"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
               kkk 
               label=""
@@ -401,7 +423,7 @@ Employment Status *:      </label>
           name="cEmail"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
               kkk 
               label=""
@@ -422,7 +444,7 @@ Employment Status *:      </label>
           name="cMoble"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
               kkk 
               label=""
@@ -445,7 +467,7 @@ Employment Status *:      </label>
           name="cTelephone"
           render={({ field }) => (
               <TextField
-            required
+             required
               className="col-4"
               kkk 
               label=""

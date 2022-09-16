@@ -153,7 +153,8 @@ pAnyDriver: [
 //personal start
 
 pTitle:"",
-pFullName: "",
+pFirstName: "",
+pLastName: "",
 pBrith: "",
 PHousNam: "",
 pAddress: "",
@@ -264,10 +265,15 @@ cContact: [
         { key : 1 ,By : "Yes"},
         { key : 2 ,By : "No"}
     ],
-    dAnyMotorAccident:[
+    dAnyMotorAccident:
+    [
         { key : 1 ,By : "Yes"},
         { key : 2 ,By : "No"}
     ],
+    // [
+    //     { key : 1 ,By : "Yes"},
+    //     { key : 2 ,By : "No"}
+    // ],
 
     // deType One
 deType :[
@@ -381,7 +387,9 @@ deInjuries3 :[
         { key : 2 ,By : "No"}
     ],
 
-    // extra Motor Conviction
+
+
+
     deConvection :[
         { key : 1 ,By : "AC10"},
         { key : 2 ,By : "AC20"},
@@ -698,7 +706,17 @@ deInjuries3 :[
 
     deFine3: "",
     deBan3 : "",
+
+
+
+
+
+
     //Additional Drivers
+
+
+    //  step 4
+
     adAddAnoterDriver: [
         { key : 1 ,By : "Yes"},
         { key : 2 ,By : "No"}
@@ -821,4 +839,435 @@ ayMotorDisqualification: [
     { key : 2 ,By : "No"}
 ],
 
+
+
+  // aydeType One
+  aydeType :[
+    { key : 1 ,By : "Acciaydent"},
+    { key : 2 ,By : "Explosion"},
+    { key : 3 ,By : "Fire Damage"},
+    { key : 4 ,By : "Lightnin Damage"},
+    { key : 5 ,By : "Riot Damage"},
+    { key : 6 ,By : "Theft Accessories"},
+    { key : 7 ,By : "Theft Personal Effects"},
+    { key : 8 ,By : "Theft Sound Effects"},
+    { key : 9 ,By : "Theft of Vehicles"},
+    { key : 10 ,By : "Theft Related Damage"},
+    { key : 11 ,By : "WiaydeScreen Only"},
+],
+aydeDate: '',
+aydeDamage: [
+    { key : 1 ,By : "Damaged - Amount Known"},
+    { key : 2 ,By : "No Damage"},
+    { key : 3 ,By : "UnknownWrite-Off"},
+],
+aydeCost:'',
+
+aydeFaults:[
+    { key : 1 ,By : "Both Parties"},
+    { key : 2 ,By : "Othe Parties"},
+    { key : 3 ,By : "Our Driver"},
+    { key : 4 ,By : "Unoccupied Vehicle"},
+
+],
+aydeInjuries :[
+    { key : 1 ,By : "Yes"},
+    { key : 2 ,By : "No"}
+],
+
+
+//aydeType  two
+
+
+aydeType2 :[
+    { key : 1 ,By : "Acciaydent"},
+    { key : 2 ,By : "Explosion"},
+    { key : 3 ,By : "Fire Damage"},
+    { key : 4 ,By : "Lightnin Damage"},
+    { key : 5 ,By : "Riot Damage"},
+    { key : 6 ,By : "Theft Accessories"},
+    { key : 7 ,By : "Theft Personal Effects"},
+    { key : 8 ,By : "Theft Sound Effects"},
+    { key : 9 ,By : "Theft of Vehicles"},
+    { key : 10 ,By : "Theft Related Damage"},
+    { key : 11 ,By : "WiaydeScreen Only"},
+],
+aydeDate2: '',
+aydeDamage2: [
+    { key : 1 ,By : "Damaged - Amount Known"},
+    { key : 2 ,By : "No Damage"},
+    { key : 3 ,By : "UnknownWrite-Off"},
+],
+aydeCost2:'',
+
+aydeFaults2:[
+    { key : 1 ,By : "Both Parties"},
+    { key : 2 ,By : "Othe Parties"},
+    { key : 3 ,By : "Our Driver"},
+    { key : 4 ,By : "Unoccupied Vehicle"},
+
+],
+aydeInjuries2 :[
+    { key : 1 ,By : "Yes"},
+    { key : 2 ,By : "No"}
+],
+
+
+// aydeType three
+aydeType3 :[
+    { key : 1 ,By : "Acciaydent"},
+    { key : 2 ,By : "Explosion"},
+    { key : 3 ,By : "Fire Damage"},
+    { key : 4 ,By : "Lightnin Damage"},
+    { key : 5 ,By : "Riot Damage"},
+    { key : 6 ,By : "Theft Accessories"},
+    { key : 7 ,By : "Theft Personal Effects"},
+    { key : 8 ,By : "Theft Sound Effects"},
+    { key : 9 ,By : "Theft of Vehicles"},
+    { key : 10 ,By : "Theft Related Damage"},
+    { key : 11 ,By : "WiaydeScreen Only"},
+],
+aydeDate3: '',
+aydeDamage3: [
+    { key : 1 ,By : "Damaged - Amount Known"},
+    { key : 2 ,By : "No Damage"},
+    { key : 3 ,By : "UnknownWrite-Off"},
+],
+aydeCost3:'',
+
+aydeFaults3:[
+    { key : 1 ,By : "Both Parties"},
+    { key : 2 ,By : "Othe Parties"},
+    { key : 3 ,By : "Our Driver"},
+    { key : 4 ,By : "Unoccupied Vehicle"},
+
+],
+aydeInjuries3 :[
+    { key : 1 ,By : "Yes"},
+    { key : 2 ,By : "No"}
+],
+
+
+//Any motor convictions fixed penalitst or disqualification in the last 5 years? step 4
+
+aydeConvection :[
+    { key : 1 ,By : "AC10"},
+    { key : 2 ,By : "AC20"},
+    { key : 3 ,By : "AC30"},
+    { key : 4 ,By : "AC99"},
+    { key : 5 ,By : "BA10"},
+    { key : 6 ,By : "BA20"},
+    { key : 7 ,By : "BA30"},
+    { key : 8 ,By : "BA99"},
+    { key : 9 ,By : "CD10"},
+    { key : 10 ,By : "CD20"},
+    { key : 11 ,By : "CD30"},
+    { key : 12 ,By : "CD40"},
+    { key : 14 ,By : "CD50"},
+    { key : 14 ,By : "CD60"},
+    { key : 15 ,By : "CD70"},
+    { key : 16 ,By : "CD80"},
+    { key : 17 ,By : "CD90"},
+    { key : 18 ,By : "CD99"},
+    { key : 19 ,By : "CU10"},
+    { key : 20,By : "CU20"},
+    { key : 21 ,By : "CU30"},
+    { key : 22 ,By : "CU40"},
+    { key : 23 ,By : "CU60"},
+    { key : 24 ,By : "CU70"},
+    { key : 26,By : "CU80"},
+    { key : 26,By : "DD10"},
+    { key : 17,By : "DD20"},
+    { key : 28,By : "DD30"},
+    { key : 29,By : "DD40"},
+    { key : 30 ,By : "DD60"},
+    { key : 31 ,By : "DD70"},
+    { key : 32,By : "DD80"},
+    { key : 33,By : "DR10"},
+    { key : 34 ,By : "DR20"},
+    { key : 35,By : "DR30"},
+    { key : 36 ,By : "DR40"},
+    { key : 37 ,By : "DR60"},
+    { key : 38 ,By : "DR70"},
+    { key : 39 ,By : "DR80"},
+    { key : 40 ,By : "IN10"},
+    { key : 41 ,By : "LC10"},
+    { key : 42,By : "LC20"},
+    { key : 43,By : "LC30"},
+    { key : 44 ,By : "LC40"},
+    { key : 45 ,By : "LC60"},
+    { key : 46 ,By : "MS10"},
+    { key : 47 ,By : "MS20"},
+    { key : 48 ,By : "MS30"},
+    { key : 49 ,By : "MS40"},
+    { key : 50 ,By : "MS50"},
+    { key : 51,By : "MS60"},
+    { key : 52 ,By : "MS70"},
+    { key : 53 ,By : "MS80"},
+    { key : 54 ,By : "MW10"},
+    { key : 55 ,By : "PC10"},
+    { key : 56 ,By : "PC20"},
+    { key : 57 ,By : "PC30"},
+    { key : 58 ,By : "PL10"},
+    { key : 59 ,By : "PL20"},
+    { key : 60 ,By : "PL30"},
+    { key : 61 ,By : "PL40"},
+    { key : 62 ,By : "PL50"},
+    { key : 63 ,By : "SP10"},
+    { key : 64 ,By : "SP20"},
+    { key : 65 ,By : "Sp30"},
+    { key : 66 ,By : "SP40"},
+    { key : 67 ,By : "SP50"},
+    { key : 68 ,By : "SAC"},
+    { key : 69 ,By : "TS10"},
+    { key : 70 ,By : "TS20"},
+    { key : 71 ,By : "TS30"},
+    { key : 72 ,By : "TS40"},
+    { key : 73 ,By : "TS50"},
+    { key : 74 ,By : "TS60"},
+    { key : 75 ,By : "TS70"},
+    { key : 76 ,By : "TS99"},
+    { key : 77 ,By : "UT10"},
+    { key : 78,By : "UT20"},
+    { key : 79 ,By : "UT30"},
+    { key : 80 ,By : "UT40"},
+    { key : 81 ,By : "UT50"},
+
+    
+   
+],
+aydeDateConvection: "",
+aydePoints: [
+    { key : 1 ,By : "1"},
+    { key : 2 ,By : "2"},
+    { key : 3 ,By : "3"},
+    { key : 4 ,By : "4"},
+    { key : 5 ,By : "5"},
+    { key : 6 ,By : "6"},
+    { key : 7 ,By : "7"},
+    { key : 8 ,By : "8"},
+    { key : 9 ,By : "9"},
+    { key : 10 ,By : "10"},
+    { key : 11 ,By : "11"},
+    { key : 12 ,By : "None"},
+],
+
+aydeFine: "",
+aydeBan : "",
+
+
+// extra motor conviction 2
+aydeConvection2 :[
+    { key : 1 ,By : "AC10"},
+    { key : 2 ,By : "AC20"},
+    { key : 3 ,By : "AC30"},
+    { key : 4 ,By : "AC99"},
+    { key : 5 ,By : "BA10"},
+    { key : 6 ,By : "BA20"},
+    { key : 7 ,By : "BA30"},
+    { key : 8 ,By : "BA99"},
+    { key : 9 ,By : "CD10"},
+    { key : 10 ,By : "CD20"},
+    { key : 11 ,By : "CD30"},
+    { key : 12 ,By : "CD40"},
+    { key : 14 ,By : "CD50"},
+    { key : 14 ,By : "CD60"},
+    { key : 15 ,By : "CD70"},
+    { key : 16 ,By : "CD80"},
+    { key : 17 ,By : "CD90"},
+    { key : 18 ,By : "CD99"},
+    { key : 19 ,By : "CU10"},
+    { key : 20,By : "CU20"},
+    { key : 21 ,By : "CU30"},
+    { key : 22 ,By : "CU40"},
+    { key : 23 ,By : "CU60"},
+    { key : 24 ,By : "CU70"},
+    { key : 26,By : "CU80"},
+    { key : 26,By : "DD10"},
+    { key : 17,By : "DD20"},
+    { key : 28,By : "DD30"},
+    { key : 29,By : "DD40"},
+    { key : 30 ,By : "DD60"},
+    { key : 31 ,By : "DD70"},
+    { key : 32,By : "DD80"},
+    { key : 33,By : "DR10"},
+    { key : 34 ,By : "DR20"},
+    { key : 35,By : "DR30"},
+    { key : 36 ,By : "DR40"},
+    { key : 37 ,By : "DR60"},
+    { key : 38 ,By : "DR70"},
+    { key : 39 ,By : "DR80"},
+    { key : 40 ,By : "IN10"},
+    { key : 41 ,By : "LC10"},
+    { key : 42,By : "LC20"},
+    { key : 43,By : "LC30"},
+    { key : 44 ,By : "LC40"},
+    { key : 45 ,By : "LC60"},
+    { key : 46 ,By : "MS10"},
+    { key : 47 ,By : "MS20"},
+    { key : 48 ,By : "MS30"},
+    { key : 49 ,By : "MS40"},
+    { key : 50 ,By : "MS50"},
+    { key : 51,By : "MS60"},
+    { key : 52 ,By : "MS70"},
+    { key : 53 ,By : "MS80"},
+    { key : 54 ,By : "MW10"},
+    { key : 55 ,By : "PC10"},
+    { key : 56 ,By : "PC20"},
+    { key : 57 ,By : "PC30"},
+    { key : 58 ,By : "PL10"},
+    { key : 59 ,By : "PL20"},
+    { key : 60 ,By : "PL30"},
+    { key : 61 ,By : "PL40"},
+    { key : 62 ,By : "PL50"},
+    { key : 63 ,By : "SP10"},
+    { key : 64 ,By : "SP20"},
+    { key : 65 ,By : "Sp30"},
+    { key : 66 ,By : "SP40"},
+    { key : 67 ,By : "SP50"},
+    { key : 68 ,By : "SAC"},
+    { key : 69 ,By : "TS10"},
+    { key : 70 ,By : "TS20"},
+    { key : 71 ,By : "TS30"},
+    { key : 72 ,By : "TS40"},
+    { key : 73 ,By : "TS50"},
+    { key : 74 ,By : "TS60"},
+    { key : 75 ,By : "TS70"},
+    { key : 76 ,By : "TS99"},
+    { key : 77 ,By : "UT10"},
+    { key : 78,By : "UT20"},
+    { key : 79 ,By : "UT30"},
+    { key : 80 ,By : "UT40"},
+    { key : 81 ,By : "UT50"},
+    
+   
+],
+aydeDateConvection2: "",
+aydePoints2: [
+    { key : 1 ,By : "1"},
+    { key : 2 ,By : "2"},
+    { key : 3 ,By : "3"},
+    { key : 4 ,By : "4"},
+    { key : 5 ,By : "5"},
+    { key : 6 ,By : "6"},
+    { key : 7 ,By : "7"},
+    { key : 8 ,By : "8"},
+    { key : 9 ,By : "9"},
+    { key : 10 ,By : "10"},
+    { key : 11 ,By : "11"},
+    { key : 12 ,By : "None"},
+],
+
+aydeFine2: "",
+aydeBan2 : "",
+
+// extra motor coviction 3
+aydeConvection3 :[
+    { key : 1 ,By : "AC10"},
+    { key : 2 ,By : "AC20"},
+    { key : 3 ,By : "AC30"},
+    { key : 4 ,By : "AC99"},
+    { key : 5 ,By : "BA10"},
+    { key : 6 ,By : "BA20"},
+    { key : 7 ,By : "BA30"},
+    { key : 8 ,By : "BA99"},
+    { key : 9 ,By : "CD10"},
+    { key : 10 ,By : "CD20"},
+    { key : 11 ,By : "CD30"},
+    { key : 12 ,By : "CD40"},
+    { key : 14 ,By : "CD50"},
+    { key : 14 ,By : "CD60"},
+    { key : 15 ,By : "CD70"},
+    { key : 16 ,By : "CD80"},
+    { key : 17 ,By : "CD90"},
+    { key : 18 ,By : "CD99"},
+    { key : 19 ,By : "CU10"},
+    { key : 20,By : "CU20"},
+    { key : 21 ,By : "CU30"},
+    { key : 22 ,By : "CU40"},
+    { key : 23 ,By : "CU60"},
+    { key : 24 ,By : "CU70"},
+    { key : 26,By : "CU80"},
+    { key : 26,By : "DD10"},
+    { key : 17,By : "DD20"},
+    { key : 28,By : "DD30"},
+    { key : 29,By : "DD40"},
+    { key : 30 ,By : "DD60"},
+    { key : 31 ,By : "DD70"},
+    { key : 32,By : "DD80"},
+    { key : 33,By : "DR10"},
+    { key : 34 ,By : "DR20"},
+    { key : 35,By : "DR30"},
+    { key : 36 ,By : "DR40"},
+    { key : 37 ,By : "DR60"},
+    { key : 38 ,By : "DR70"},
+    { key : 39 ,By : "DR80"},
+    { key : 40 ,By : "IN10"},
+    { key : 41 ,By : "LC10"},
+    { key : 42,By : "LC20"},
+    { key : 43,By : "LC30"},
+    { key : 44 ,By : "LC40"},
+    { key : 45 ,By : "LC60"},
+    { key : 46 ,By : "MS10"},
+    { key : 47 ,By : "MS20"},
+    { key : 48 ,By : "MS30"},
+    { key : 49 ,By : "MS40"},
+    { key : 50 ,By : "MS50"},
+    { key : 51,By : "MS60"},
+    { key : 52 ,By : "MS70"},
+    { key : 53 ,By : "MS80"},
+    { key : 54 ,By : "MW10"},
+    { key : 55 ,By : "PC10"},
+    { key : 56 ,By : "PC20"},
+    { key : 57 ,By : "PC30"},
+    { key : 58 ,By : "PL10"},
+    { key : 59 ,By : "PL20"},
+    { key : 60 ,By : "PL30"},
+    { key : 61 ,By : "PL40"},
+    { key : 62 ,By : "PL50"},
+    { key : 63 ,By : "SP10"},
+    { key : 64 ,By : "SP20"},
+    { key : 65 ,By : "Sp30"},
+    { key : 66 ,By : "SP40"},
+    { key : 67 ,By : "SP50"},
+    { key : 68 ,By : "SAC"},
+    { key : 69 ,By : "TS10"},
+    { key : 70 ,By : "TS20"},
+    { key : 71 ,By : "TS30"},
+    { key : 72 ,By : "TS40"},
+    { key : 73 ,By : "TS50"},
+    { key : 74 ,By : "TS60"},
+    { key : 75 ,By : "TS70"},
+    { key : 76 ,By : "TS99"},
+    { key : 77 ,By : "UT10"},
+    { key : 78,By : "UT20"},
+    { key : 79 ,By : "UT30"},
+    { key : 80 ,By : "UT40"},
+    { key : 81 ,By : "UT50"},
+
+    
+   
+],
+aydeDateConvection3: "",
+aydePoints3: [
+    { key : 1 ,By : "1"},
+    { key : 2 ,By : "2"},
+    { key : 3 ,By : "3"},
+    { key : 4 ,By : "4"},
+    { key : 5 ,By : "5"},
+    { key : 6 ,By : "6"},
+    { key : 7 ,By : "7"},
+    { key : 8 ,By : "8"},
+    { key : 9 ,By : "9"},
+    { key : 10 ,By : "10"},
+    { key : 11 ,By : "11"},
+    { key : 12 ,By : "None"},
+],
+
+aydeFine3: "",
+aydeBan3 : "",
+
   };
+
+
+

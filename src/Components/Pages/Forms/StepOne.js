@@ -2,6 +2,7 @@ import {
   Container,
   FormHelperText,
   InputLabel,
+  makeStyles,
   MenuItem,
   Select,
   TextField,
@@ -14,6 +15,8 @@ import {
   Controller,
 } from "react-hook-form";
 import "./Fstyle.css";
+
+
 
 const StepOne = ({formData, setForm, navigation, methods, register}) => {
   const {
@@ -37,26 +40,29 @@ const StepOne = ({formData, setForm, navigation, methods, register}) => {
     vPolicyStart,
   } = formData;
 
-  const { control } = useFormContext();
 
+
+  const { control } = useFormContext();
   return (
     <>
       <h1 className="mt-5">Vehicle Details</h1>
       <hr style={{ color: "black" }}></hr>
       <div className="d-flex row">
-        <label className="d-flex col-4" style={{ marginTop: "30px" }}>
+        <label className="d-flex col-4" style={{ marginTop: "30px"  }}>
         Vehicle Registration *:        </label>
         <Controller
           control={control}
+        
           name="vRegistration"
           render={({ field }) => (
               <TextField
-            required
-            kkk 
-              className="col-4"
+            // required
+          
+              className="col-4 classes"
               label=""
               variant="outlined"
               halfwidth
+          
               margin="normal"
               {...field}
             />

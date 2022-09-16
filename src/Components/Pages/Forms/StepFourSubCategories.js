@@ -56,7 +56,7 @@ const StepFourSubCategories = ({
           name="ayTitle"
           render={({ field }) => (
               <TextField
-            required
+            //required
               className="col-4"
               label=""
               variant="outlined"
@@ -76,7 +76,7 @@ const StepFourSubCategories = ({
           name="ayName"
           render={({ field }) => (
               <TextField
-            required
+            //required
               className="col-4"
               id="ayName"
               label=""
@@ -96,7 +96,7 @@ const StepFourSubCategories = ({
           name="aySurName"
           render={({ field }) => (
               <TextField
-            required
+            //required
               className="col-4"
               id="aySurName"
               label=""
@@ -143,7 +143,7 @@ const StepFourSubCategories = ({
           name="ayBirthDate"
           render={({ field }) => (
               <TextField
-            required
+            //required
               className="col-4"
               label=""
               variant="outlined"
@@ -213,7 +213,7 @@ const StepFourSubCategories = ({
           name="ayEmployedOccupation"
           render={({ field }) => (
               <TextField
-            required
+            //required
               className="col-4"
               label=""
               variant="outlined"
@@ -233,7 +233,7 @@ const StepFourSubCategories = ({
           name="ayEmployedBusiness"
           render={({ field }) => (
               <TextField
-            required
+            //required
               className="col-4"
               label=""
               variant="outlined"
@@ -303,7 +303,7 @@ const StepFourSubCategories = ({
           name="ay3yearLicenceObtain"
           render={({ field }) => (
               <TextField
-            required
+            //required
               className="col-4"
               label=""
               variant="outlined"
@@ -323,7 +323,7 @@ const StepFourSubCategories = ({
           name="ayDrivingLicence"
           render={({ field }) => (
               <TextField
-            required
+            //required
               className="col-4"
               label=""
               variant="outlined"
@@ -394,7 +394,7 @@ const StepFourSubCategories = ({
           name="ayWhereResidentUk"
           render={({ field }) => (
               <TextField
-            required
+            //required
               className="col-4"
               label=""
               variant="outlined"

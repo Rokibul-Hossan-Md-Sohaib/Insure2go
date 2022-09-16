@@ -7,6 +7,8 @@ import {
   FormProvider,
   Controller,
 } from "react-hook-form";
+import SubStepThree from "./SubStepThree";
+import SubStepThree2 from "./SubStepThree2";
 
 const StepThree = ({ formData, setForm, navigation, methods }) => {
   const {
@@ -40,13 +42,40 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
   } = formData;
 
   const { control } = useFormContext();
-  const [update, setUpdate] = useState(dAnyMotorAccident);
+  const [isShown, setIsShown] = useState(false);
+
   // console.log("updateees", update);
-  const [values, setValues] = useState();
-  const myfunc = () => {
-    return <div>hello</div>;
+  const [values, setValues] = useState('');
+  const [values2, setValues2] = useState('');
+
+  
+  const handleMotorAccendent = (event) => {
+  // if(event.target.value == 1){
+  //   console.log("hello")
+  // }
+const getUser = event.target.value
+setValues(getUser)
+  console.log("hiiiiiiiiiii" ,getUser)
+    // 👇️ toggle shown state
+    // setIsShown(current => !current);
+
+    // 👇️ or simply set it to true
+    // setIsShown(true);
   };
 
+  const handleMotoringOffence  = (event) => {
+    // if(event.target.value == 1){
+    //   console.log("hello")
+    // }
+  const getUser = event.target.value
+  setValues2(getUser)
+    console.log("hiiiiiiiiiii" ,getUser)
+      // 👇️ toggle shown state
+      // setIsShown(current => !current);
+  
+      // 👇️ or simply set it to true
+      // setIsShown(true);
+    };
   // console.log('vaal', val)}
   //     setValues (console.log("sssss",slectedId))
   //     const filterd = update.filter(x =>
@@ -160,7 +189,7 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
           </label>
           <Controller
             control={control}
-            name="dPeriodLicense"
+            name="dMedicalConditon"
             render={({ field }) => (
               <select
                 className="form-control col-7"
@@ -337,15 +366,18 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
                 className="form-control col-7"
                 {...field}
                 style={{ width: "50%" }}
+               onChange={handleMotorAccendent}
                 // onChange={(e) => {
                 //   handleClik(e);
                 // }}
               >
                 <option>---select---</option>
+                {/* <option value="1"><h4 >{dAnyMotorAccident.By} </h4></option>
+                <option value="2">{dAnyMotorAccident.Byx} </option> */}
                 {dAnyMotorAccident &&
                   dAnyMotorAccident.map((h, i) => (
                     <option key={i} value={h.dAnyMotorAccident}>
-                      {h.By}
+                      <h2>{h.By}</h2>
                     </option>
                   ))}
               
@@ -357,441 +389,23 @@ const StepThree = ({ formData, setForm, navigation, methods }) => {
         {/* new table for accident */}
 
 
-        <div className="d-flex mr-4 mt-3">
-          <label
-            className=""
-            style={{ marginTop: "10px", marginRight: "40px" }}
-          >
-            If Yes,  Motor Accidents details {" "}
-          </label>
-
-          <details className="mt-2 ml-5" 
-           style={{ marginLeft: "120px" }}
-          >
-            <summary style={{ color: "gray", border: '2px solid gray' }}>
-              Motor Accidents Or Claim Details
-            </summary>
-
-             {/* Accident Type 3 */}
-
-            <div className="row">
-              <div className="col-4">
-
-           
-              <label className="" style={{ marginTop: "30px" }}>
-                  <h1>1</h1>
-                  Type
-                </label>
-          <Controller
-            control={control}
-            name="deType"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deType &&
-                  deType.map((h, i) => (
-                    <option key={i} value={h.deType}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
+       {
+        values == "Yes" && (
+          <SubStepThree
+          deType={deType}
+    deDate={deDate}
+    deDamage={deDamage}
+    deCost={deCost}
+    deFaults={deFaults}deInjuries={deInjuries}
+    deType2 ={deType2}deDate2={deDate2} deDamage2={deDamage2}
+    deCost2={deCost2}deFaults2={deFaults2}deInjuries2={deInjuries2}
+    deType3={deType3} deDate3={deDate3}deDamage3={deDamage3}deCost3={deCost3}
+    deFaults3={deFaults3} deInjuries3={deInjuries3}
+          
           />
-       
-                <label className="" style={{ marginTop: "30px" }}>
-               
-                  Date
-                </label>
-                <Controller
-                  control={control}
-                  name="deDate"
-                  render={({ field }) => (
-                      <TextField
-           
-                      sx={{ display: "block" }}
-                      id="pReferrer"
-                      label=""
-                      variant="outlined"
-                      halfwidth
-                      margin="normal"
-                      {...field}
-                    />
-                  )}
-                />
-         <label className="" style={{ marginTop: "30px" }}>
-                  Damage :
-                </label>
-          <Controller
-            control={control}
-            name="deDamage"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deDamage &&
-                  deDamage.map((h, i) => (
-                    <option key={i} value={h.deDamage}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
+        )
 
-<label className="" style={{ marginTop: "30px" }}>
-               
-Cost(£) - if known :
-             </label>
-             <Controller
-               control={control}
-               name="deCost"
-               render={({ field }) => (
-                   <TextField
-           
-                   sx={{ display: "block" }}
-                   id="pReferrer"
-                   label=""
-                   variant="outlined"
-                   halfwidth
-                   margin="normal"
-                   {...field}
-                 />
-               )}
-             />
-
-<label className="" style={{ marginTop: "30px" }}>
-Fault :
-                </label>
-          <Controller
-            control={control}
-            name="deFaults"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deFaults &&
-                  deFaults.map((h, i) => (
-                    <option key={i} value={h.deFaults}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-<label className="" style={{ marginTop: "30px" }}>
-Any Injuries                 </label>
-          <Controller
-            control={control}
-            name="deInjuries"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deInjuries &&
-                  deInjuries.map((h, i) => (
-                    <option key={i} value={h.deInjuries}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-              </div>
-
- {/* Accident Type 2 */}
-
-              <div className="col-4">
-
-           
-              <label className="" style={{ marginTop: "30px" }}>
-                  <h1>2</h1>
-                  Type
-                </label>
-          <Controller
-            control={control}
-            name="deType2"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deType2 &&
-                  deType2.map((h, i) => (
-                    <option key={i} value={h.deType2}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-       
-                <label className="" style={{ marginTop: "30px" }}>
-               
-                  Date
-                </label>
-                <Controller
-                  control={control}
-                  name="deDate2"
-                  render={({ field }) => (
-                      <TextField
-           
-                      sx={{ display: "block" }}
-                      id="pReferrer"
-                      label=""
-                      variant="outlined"
-                      halfwidth
-                      margin="normal"
-                      {...field}
-                    />
-                  )}
-                />
-         <label className="" style={{ marginTop: "30px" }}>
-                  Damage :
-                </label>
-          <Controller
-            control={control}
-            name="deDamage2"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deDamage2 &&
-                  deDamage2.map((h, i) => (
-                    <option key={i} value={h.deDamage2}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-
-<label className="" style={{ marginTop: "30px" }}>
-               
-Cost(£) - if known :
-             </label>
-             <Controller
-               control={control}
-               name="deCost2"
-               render={({ field }) => (
-                   <TextField
-           
-                   sx={{ display: "block" }}
-                   id="pReferrer"
-                   label=""
-                   variant="outlined"
-                   halfwidth
-                   margin="normal"
-                   {...field}
-                 />
-               )}
-             />
-
-<label className="" style={{ marginTop: "30px" }}>
-Fault :
-                </label>
-          <Controller
-            control={control}
-            name="deFaults2"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deFaults2 &&
-                  deFaults2.map((h, i) => (
-                    <option key={i} value={h.deFaults2}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-
-<label className="" style={{ marginTop: "30px" }}>
-Any Injuries                 </label>
-          <Controller
-            control={control}
-            name="deInjuries2"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deInjuries2 &&
-                  deInjuries2.map((h, i) => (
-                    <option key={i} value={h.deInjuries2}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-  
-              </div>
-
- {/* Accident Type 3 */}
-
-              <div className="col-4">
-
-           
-              <label className="" style={{ marginTop: "30px" }}>
-                  <h1>3</h1>
-                  Type
-                </label>
-          <Controller
-            control={control}
-            name="deType3"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deType3 &&
-                  deType3.map((h, i) => (
-                    <option key={i} value={h.deType3}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-       
-                <label className="" style={{ marginTop: "30px" }}>
-               
-                  Date
-                </label>
-                <Controller
-                  control={control}
-                  name="deDate3"
-                  render={({ field }) => (
-                      <TextField
-           
-                      sx={{ display: "block" }}
-                      id="pReferrer"
-                      label=""
-                      variant="outlined"
-                      halfwidth
-                      margin="normal"
-                      {...field}
-                    />
-                  )}
-                />
-         <label className="" style={{ marginTop: "30px" }}>
-                  Damage :
-                </label>
-          <Controller
-            control={control}
-            name="deDamage3"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deDamage3 &&
-                  deDamage3.map((h, i) => (
-                    <option key={i} value={h.deDamage3}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-
-<label className="" style={{ marginTop: "30px" }}>
-               
-Cost(£) - if known :
-             </label>
-             <Controller
-               control={control}
-               name="deCost3"
-               render={({ field }) => (
-                   <TextField
-           
-                   sx={{ display: "block" }}
-                   id="pReferrer"
-                   label=""
-                   variant="outlined"
-                   halfwidth
-                   margin="normal"
-                   {...field}
-                 />
-               )}
-             />
-
-<label className="" style={{ marginTop: "30px" }}>
-Fault :
-                </label>
-          <Controller
-            control={control}
-            name="deFaults3"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deFaults3 &&
-                  deFaults3.map((h, i) => (
-                    <option key={i} value={h.deFaults3}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-
-<label className="" style={{ marginTop: "30px" }}>
-Any Injuries                 </label>
-          <Controller
-            control={control}
-            name="deInjuries3"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deInjuries3 &&
-                  deInjuries3.map((h, i) => (
-                    <option key={i} value={h.deInjuries3}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-              </div>
-            </div>
-          </details>
-        </div>
+}
 
 {/* end of accident detail */}
 
@@ -810,6 +424,7 @@ Any Injuries                 </label>
                 className="form-control col-7"
                 {...field}
                 style={{ width: "50%" }}
+                onChange={handleMotoringOffence}
               >
                 <option>---select---</option>
                 {dWhreBornUk &&
@@ -825,372 +440,17 @@ Any Injuries                 </label>
 
         {/* start Fixed Penalty Or Disqualification Details
  detail */}
+{
+  values2 =="Yes" && (
+    <SubStepThree2
+    deConvection={deConvection}deDateConvection={deDateConvection} dePoints={dePoints} deFine={deFine} 
+    deBan={deBan}deConvection2 ={deConvection2}deDateConvection2={deDateConvection2} dePoints2={dePoints2}
+    deFine2={deFine2} deBan2={deBan2}deConvection3={deConvection3}deDateConvection3={deDateConvection3}
+     dePoints3={dePoints3} deFine3={deFine3} deBan3={deBan3}
+    />
+  )
+}
 
-<div className="d-flex mr-4 mt-3">
-          <label
-            className=""
-            style={{ marginTop: "10px", marginRight: "50px" }}
-          >
-          If Yes, Conviction/Points Details
-          </label>
-
-          <details className="mt-2 ml-3"
-               style={{ marginLeft: "100px" }}
-          >
-            <summary style={{ color: "gray", border: '2px solid gray' }}>
-            Motor Conviction, Fixed Penalty Or br Disqualification Details
-            </summary>
-
-             {/* Accident Type 3 */}
-
-            <div className="row">
-              <div className="col-4">
-
-           
-              <label className="" style={{ marginTop: "30px" }}>
-                  <h1>1</h1>
-                  Conviction Code :
-                </label>
-          <Controller
-            control={control}
-            name="deConvection"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {deConvection &&
-                  deConvection.map((h, i) => (
-                    <option key={i} value={h.deConvection}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-       
-                <label className="" style={{ marginTop: "30px" }}>
-               
-                Date Of Conviction :
-                </label>
-                <Controller
-                  control={control}
-                  name="deDateConvection"
-                  render={({ field }) => (
-                      <TextField
-           
-                      sx={{ display: "block" }}
-                      id="pReferrer"
-                      label=""
-                      variant="outlined"
-                      halfwidth
-                      margin="normal"
-                      {...field}
-                    />
-                  )}
-                />
-         <label className="" style={{ marginTop: "30px" }}>
-         Points :
-                </label>
-          <Controller
-            control={control}
-            name="dePoints"
-            render={({ field }) => (
-              <select
-                className="form-control col-7"
-                {...field}
-                style={{ width: "90%" }}
-              >
-                <option>---select---</option>
-                {dePoints &&
-                  dePoints.map((h, i) => (
-                    <option key={i} value={h.dePoints}>
-                      {h.By}
-                    </option>
-                  ))}
-              </select>
-            )}
-          />
-
-<label className="" style={{ marginTop: "30px" }}>
-               
-Fine(£) - if any :
-             </label>
-             <Controller
-               control={control}
-               name="deFine"
-               render={({ field }) => (
-                   <TextField
-           
-                   sx={{ display: "block" }}
-                   id="pReferrer"
-                   label=""
-                   variant="outlined"
-                   halfwidth
-                   margin="normal"
-                   {...field}
-                 />
-               )}
-             />
-
-<label className="" style={{ marginTop: "30px" }}>
-               
-Ban(Months) - if any :
-             </label>
-             <Controller
-               control={control}
-               name="deBan"
-               render={({ field }) => (
-                   <TextField
-           
-                   sx={{ display: "block" }}
-                   id="pReferrer"
-                   label=""
-                   variant="outlined"
-                   halfwidth
-                   margin="normal"
-                   {...field}
-                 />
-               )}
-             />
-        
-              </div>
-
- {/* Accident Type 2 */}
-
- <div className="col-4">
-
-           
-<label className="" style={{ marginTop: "30px" }}>
-    <h1>2</h1>
-    Conviction Code :
-  </label>
-<Controller
-control={control}
-name="deConvection2"
-render={({ field }) => (
-<select
-  className="form-control col-7"
-  {...field}
-  style={{ width: "90%" }}
->
-  <option>---select---</option>
-  {deConvection2 &&
-    deConvection2.map((h, i) => (
-      <option key={i} value={h.deConvection2}>
-        {h.By}
-      </option>
-    ))}
-</select>
-)}
-/>
-
-  <label className="" style={{ marginTop: "30px" }}>
- 
-  Date Of Conviction :
-  </label>
-  <Controller
-    control={control}
-    name="deDateConvection2"
-    render={({ field }) => (
-        <TextField
-           
-        sx={{ display: "block" }}
-        id="pReferrer"
-        label=""
-        variant="outlined"
-        halfwidth
-        margin="normal"
-        {...field}
-      />
-    )}
-  />
-<label className="" style={{ marginTop: "30px" }}>
-Points :
-  </label>
-<Controller
-control={control}
-name="dePoints2"
-render={({ field }) => (
-<select
-  className="form-control col-7"
-  {...field}
-  style={{ width: "90%" }}
->
-  <option>---select---</option>
-  {dePoints2 &&
-    dePoints2.map((h, i) => (
-      <option key={i} value={h.dePoints2}>
-        {h.By}
-      </option>
-    ))}
-</select>
-)}
-/>
-
-<label className="" style={{ marginTop: "30px" }}>
- 
-Fine(£) - if any :
-</label>
-<Controller
- control={control}
- name="deFine2"
- render={({ field }) => (
-     <TextField
-           
-     sx={{ display: "block" }}
-     id="pReferrer"
-     label=""
-     variant="outlined"
-     halfwidth
-     margin="normal"
-     {...field}
-   />
- )}
-/>
-
-<label className="" style={{ marginTop: "30px" }}>
- 
-Ban(Months) - if any :
-</label>
-<Controller
- control={control}
- name="deBan2"
- render={({ field }) => (
-     <TextField
-           
-     sx={{ display: "block" }}
-     id="pReferrer"
-     label=""
-     variant="outlined"
-     halfwidth
-     margin="normal"
-     {...field}
-   />
- )}
-/>
-
-</div>
-
- {/* conviction */}
- <div className="col-4">
-
-           
-<label className="" style={{ marginTop: "30px" }}>
-    <h1>3</h1>
-    Conviction Code :
-  </label>
-<Controller
-control={control}
-name="deConvection3"
-render={({ field }) => (
-<select
-  className="form-control col-7"
-  {...field}
-  style={{ width: "90%" }}
->
-  <option>---select---</option>
-  {deConvection3 &&
-    deConvection3.map((h, i) => (
-      <option key={i} value={h.deConvection3}>
-        {h.By}
-      </option>
-    ))}
-</select>
-)}
-/>
-
-  <label className="" style={{ marginTop: "30px" }}>
- 
-  Date Of Conviction :
-  </label>
-  <Controller
-    control={control}
-    name="deDateConvection3"
-    render={({ field }) => (
-        <TextField
-           
-        sx={{ display: "block" }}
-        id="pReferrer"
-        label=""
-        variant="outlined"
-        halfwidth
-        margin="normal"
-        {...field}
-      />
-    )}
-  />
-<label className="" style={{ marginTop: "30px" }}>
-Points :
-  </label>
-<Controller
-control={control}
-name="dePoints3"
-render={({ field }) => (
-<select
-  className="form-control col-7"
-  {...field}
-  style={{ width: "90%" }}
->
-  <option>---select---</option>
-  {dePoints3 &&
-    dePoints3.map((h, i) => (
-      <option key={i} value={h.dePoints3}>
-        {h.By}
-      </option>
-    ))}
-</select>
-)}
-/>
-
-<label className="" style={{ marginTop: "30px" }}>
- 
-Fine(£) - if any :
-</label>
-<Controller
- control={control}
- name="deFine3"
- render={({ field }) => (
-     <TextField
-           
-     sx={{ display: "block" }}
-     id="pReferrer"
-     label=""
-     variant="outlined"
-     halfwidth
-     margin="normal"
-     {...field}
-   />
- )}
-/>
-
-<label className="" style={{ marginTop: "30px" }}>
- 
-Ban(Months) - if any :
-</label>
-<Controller
- control={control}
- name="deBan3"
- render={({ field }) => (
-     <TextField
-           
-     sx={{ display: "block" }}
-     id="pReferrer"
-     label=""
-     variant="outlined"
-     halfwidth
-     margin="normal"
-     {...field}
-   />
- )}
-/>
-
-</div>
-            </div>
-          </details>
-        </div>
       </Container>
     </>
   );
